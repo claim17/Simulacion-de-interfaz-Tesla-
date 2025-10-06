@@ -1,0 +1,86 @@
+﻿<Window x:Class="Prueba.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Prueba"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <Storyboard x:Key="entrada">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="816"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:02" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="-3.6"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:02" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="rectangle2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="339.6"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:02" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="rectangle2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="-10.8"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:02" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="rectangle1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="891.6"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:02" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="rectangle1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="1.2"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:02" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </Window.Resources>
+    <Grid x:Name="interfaz" HorizontalAlignment="Left" Height="432" Margin="3,0,0,0" VerticalAlignment="Center" Width="797">
+        <Grid x:Name="header1" HorizontalAlignment="Left" Height="66" VerticalAlignment="Top" Width="800" Background="White">
+            <Rectangle x:Name="rectangle2" HorizontalAlignment="Left" Height="46" Margin="668,0,0,0"  VerticalAlignment="Center" Width="114" MouseDown="Rectangle_MouseDown" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="/use-removebg-preview.png" Stretch="Uniform" TileMode="None"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle x:Name="rectangle" HorizontalAlignment="Left" Height="46"  VerticalAlignment="Center" Width="120" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="/Logo-Tesla-removebg-preview.png" Stretch="Uniform"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle x:Name="rectangle1" HorizontalAlignment="Left" Height="66" Margin="125,0,0,0"  VerticalAlignment="Center" Width="138" MouseDown="Rectangle_MouseDown_1" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="/coche.png" Stretch="Uniform"/>
+                </Rectangle.Fill>
+            </Rectangle>
+        </Grid>
+        <Grid x:Name="principal" HorizontalAlignment="Left" Height="366" Margin="0,66,0,0" VerticalAlignment="Top" Width="790" Background="#FF4E4C4C">
+            <Image Margin="23,24,320,102" Source="/Image2.png" Stretch="Fill"/>
+            <TextBlock HorizontalAlignment="Left" Height="73" Margin="490,36,0,0" VerticalAlignment="Top" Width="237" TextWrapping="Wrap" FontSize="20" FontFamily="Frank Ruehl CLM BoldOblique"><Run Language="es-es" Text="TESLA MODEL X"/></TextBlock>
+            <TextBlock HorizontalAlignment="Left" Height="110" TextWrapping="Wrap" Text="Con hasta 576 kilómetros de autonomía estimada y acceso a la red de carga rápida más grande y potente del mundo, pasará menos tiempo enchufado y más en la carretera." VerticalAlignment="Top" Width="252" Margin="490,83,0,0"/>
+            <Button Content="GALERIA" HorizontalAlignment="Left" Height="50" Margin="529,198,0,0" VerticalAlignment="Top" Width="156" Click="Button_Click_1" FontFamily="Arial Black" Background="#FFEDE0E0"/>
+        </Grid>
+    </Grid>
+</Window>

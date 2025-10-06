@@ -1,0 +1,32 @@
+﻿<Window x:Class="Prueba.Window3"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Prueba"
+        mc:Ignorable="d"
+        Title="Window3" Height="450" Width="800">
+    <Grid>
+        <Grid x:Name="header1" HorizontalAlignment="Center" Height="66" VerticalAlignment="Top" Width="800" Background="White">
+            <Rectangle HorizontalAlignment="Left" Height="46" Margin="668,0,0,0"  VerticalAlignment="Center" Width="114" MouseDown="Rectangle_MouseDown">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="/use-removebg-preview.png" Stretch="Uniform" TileMode="None"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle HorizontalAlignment="Left" Height="46"  VerticalAlignment="Center" Width="120">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="/Logo-Tesla-removebg-preview.png" Stretch="Uniform"/>
+                </Rectangle.Fill>
+            </Rectangle>
+        </Grid>
+
+        <Rectangle HorizontalAlignment="Center" Height="368" Margin="0,66,0,0" Stroke="Black" VerticalAlignment="Top" Width="800" Fill="#FF140606"/>
+        <Image Margin="481,118,47,184" Source="/Image7.png" Stretch="Fill"/>
+        <Image Margin="10,283,520,33" Source="/Image8.png" Stretch="Fill"/>
+        <TextBlock HorizontalAlignment="Left" Height="99" Margin="325,283,0,0" TextWrapping="Wrap" Text="Las características avanzadas de seguridad y comodidad del Piloto automático se han diseñado para ayudarle con las partes más agotadoras de la conducción." VerticalAlignment="Top" Width="373" Foreground="#FFEAE1E1"/>
+        <TextBlock HorizontalAlignment="Left" Height="99" Margin="61,118,0,0" TextWrapping="Wrap" Text="El Model S Plaid tiene la aceleración más rápida de todos los vehículos en producción. La arquitectura de batería actualizada para todos los modelos del Model S permite realizar recorridos consecutivos sin que el rendimiento se vea afectado." VerticalAlignment="Top" Width="339" Foreground="White"/>
+        <TextBlock HorizontalAlignment="Left" Height="43" Margin="126,207,0,0" VerticalAlignment="Top" Width="154" Background="#FF973A3A" TextAlignment="Center" TextWrapping="Wrap"><Run/><LineBreak/><Run Text="C"/><Run Text="OMING SOON"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="43" Margin="434,353,0,0" VerticalAlignment="Top" Width="154" Background="#FF973A3A" TextAlignment="Center" TextWrapping="Wrap"><Run/><LineBreak/><Run Text="C"/><Run Text="OMING SOON"/></TextBlock>
+
+    </Grid>
+</Window>
